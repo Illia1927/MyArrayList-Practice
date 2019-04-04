@@ -16,7 +16,7 @@ public class MyArrayList<T> implements List<T> {
 
     public MyArrayList(int capacity) {
         if (capacity < 0)
-            throw new IllegalArgumentException("You was inputed incorect data.");
+            throw new IllegalArgumentException("invalid capacity");
         else if (capacity == 0)
             array = new Object[capacity];
     }
